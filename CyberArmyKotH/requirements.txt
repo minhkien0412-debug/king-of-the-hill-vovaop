@@ -1,16 +1,3 @@
-# ==============================================================================
-# CYBERARMY KOTH EDITION - REQUIREMENTS (PYTHON 3.14+ COMPATIBLE)
-# ==============================================================================
-# Danh sách thư viện Python thế hệ mới cho năm 2026, tối ưu hóa hiệu năng và bất đồng bộ.
-
-# Xử lý file cấu hình YAML chuẩn 1.2
 pyyaml>=6.0.2
-
-# Tính toán số học hiệu năng cao cho dự đoán chu kỳ (Sliding Window Median)
 numpy>=2.1.0
-
-# Thư viện SSH bất đồng bộ tốc độ cao cho các tác vụ mạng (nếu cần mở rộng)
 asyncssh>=2.15.0
-
-# Công cụ hỗ trợ gỡ lỗi và phân tích hệ thống (tùy chọn nhưng khuyến nghị)
-# psutil>=5.9.8 
