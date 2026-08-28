@@ -1,10 +1,16 @@
+# CyberArmy Configuration Spec v1.2
+# Cấu hình tham số cho hệ thống điều phối KotH thế hệ mới (2026)
+
 koth_config:
   team_id: "CyberArmy_V10_8"
-  target_ip: "10.10.10.5"
-  flag_path: "/var/www/html/flag.txt"
-  requests_per_sec: 35
+  target_ip: "10.10.10.5"             # IP của máy Hill trong phòng thi (Thay đổi theo thực tế)
+  flag_path: "/var/www/html/flag.txt" # Đường dẫn file flag tiêu chuẩn do BTC quy định
+  requests_per_sec: 35                # Hạn mức Token Bucket: Bảo vệ băng thông mạng, tránh bị coi là DDoS
+  
 credentials:
   ssh_user: "root"
-  ssh_pass: "SecurePass2026!"
+  ssh_pass: "SecurePass2026!"          # Mật khẩu root ban đầu hoặc tài khoản được cấp (Cần đổi ngay nếu có thể)
+  
 whitelist_ips:
-  - "10.10.14.5"
+  - "10.10.14.5"                      # IP máy tấn công của bạn (Whitelist để không tự chặn mình)
+  - "127.0.0.1"                       # Localhost luôn được phép
